@@ -1,0 +1,40 @@
+/* Combobox stilini düzenlemek için CSS */
+.combo-box {
+    -fx-background-color: #FFFFFF; /* Beyaz arka plan */
+    -fx-border-color: #BDBDBD; /* Gri kenarlık */
+    -fx-border-radius: 5; /* Yuvarlatılmış kenarlar */
+    -fx-background-radius: 20; /* Yuvarlatılmış arka plan */
+    -fx-font-size: 10px; /* Yazı boyutu */
+    -fx-text-fill: #424242; /* Yazı rengi */
+}
+
+.combo-box:hover {
+    -fx-border-color: #1976D2; /* Hover sırasında mavi kenarlık */
+    -fx-background-color: #F5F5F5; /* Hafif gri arka plan */
+}
+
+.combo-box:focused {
+    -fx-border-color: #2196F3; /* Odakta mavi kenarlık */
+    -fx-background-color: #FFFFFF; /* Odakta beyaz arka plan */
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #FFFFFF; /* Liste elemanlarının beyaz arka planı */
+    -fx-text-fill: #424242; /* Liste elemanlarının yazı rengi */
+    -fx-font-size: 10px; /* Yazı boyutu */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #E3F2FD; /* Hover sırasında açık mavi arka plan */
+    -fx-text-fill: #0D47A1; /* Hover sırasında yazı rengi */
+}
+
+.combo-box .arrow {
+    -fx-background-color: #1976D2; /* Açılır ok arka plan rengi */
+    -fx-padding: 4; /* Ok boşlukları */
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z"; /* Özel ok şekli */
+}
+
+.combo-box .arrow:hover {
+    -fx-background-color: #0D47A1; /* Hover sırasında ok rengi */
+}

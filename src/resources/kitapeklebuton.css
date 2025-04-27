@@ -1,0 +1,26 @@
+/* Kitap Ekle Butonu */
+.button{
+    -fx-background-color: #4CAF50; /* Yeşil arka plan */
+    -fx-text-fill: white; /* Beyaz metin rengi */
+    -fx-border-radius: 5; /* Yuvarlatılmış kenarlar */
+    -fx-background-radius: 5; /* Yuvarlatılmış arka plan */
+    -fx-border-color: #388E3C; /* Kenar çizgisi rengi */
+    -fx-border-width: 2px; /* Kenar çizgisi genişliği */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Hafif gölge */
+    -fx-cursor: hand; /* İmleç değişimi */
+    -fx-alignment: center; /* Metni ortala */
+}
+
+/* Kitap Ekle Butonu Hover Durumu */
+.button:hover {
+    -fx-background-color: #45A049; /* Hover durumunda daha koyu yeşil */
+    -fx-border-color: #2E7D32; /* Hover durumunda koyulaşan kenar çizgisi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 8, 0, 0, 4); /* Daha belirgin gölge */
+}
+
+/* Kitap Ekle Butonu Tıklanma Durumu */
+.button:pressed {
+    -fx-background-color: #388E3C; /* Tıklanınca daha koyu bir yeşil */
+    -fx-border-color: #2E7D32; /* Kenar rengi değişimi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0, 0, 1); /* Daha küçük gölge */
+}

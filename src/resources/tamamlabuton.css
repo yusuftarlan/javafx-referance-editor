@@ -1,0 +1,26 @@
+/* Tamamla Butonu */
+.button{
+    -fx-background-color: #2196F3; /* Mavi arka plan */
+    -fx-text-fill: white; /* Beyaz metin rengi */
+    -fx-border-radius: 5; /* Yuvarlatılmış kenarlar */
+    -fx-background-radius: 5; /* Yuvarlatılmış arka plan */
+    -fx-border-color: #1976D2; /* Mavi kenar */
+    -fx-border-width: 2px; /* Kenar çizgisi genişliği */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Hafif gölge */
+    -fx-cursor: hand; /* İmleç değişimi */
+    -fx-alignment: center; /* Metni ortala */
+}
+
+/* Tamamla Butonu Hover Durumu */
+.button:hover {
+    -fx-background-color: #1976D2; /* Hover durumunda daha koyu mavi */
+    -fx-border-color: #1565C0; /* Hover durumunda koyulaşan kenar çizgisi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 8, 0, 0, 4); /* Daha belirgin gölge */
+}
+
+/* Tamamla Butonu Tıklanma Durumu */
+.button:pressed {
+    -fx-background-color: #1565C0; /* Tıklanınca daha koyu mavi */
+    -fx-border-color: #0D47A1; /* Kenar rengi değişimi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0, 0, 1); /* Daha küçük gölge */
+}

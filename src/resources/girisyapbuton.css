@@ -1,0 +1,20 @@
+/* Normal durumdaki buton */
+.button {
+    -fx-background-color:  #003366;  /* Yeşil renk */
+    -fx-text-fill: white;           /* Yazı rengi beyaz */
+    -fx-padding: 7px 10px;         /* Butonun içindeki boşluklar */
+    -fx-font-size: 12px;
+    -fx-border-radius: 50px;           /* Yazı boyutu */
+}
+
+/* Butonun üzerine gelindiğinde (hover) renk değişimi */
+.button:hover {
+    -fx-background-color: #4C66CC;  /* Biraz daha koyu yeşil */
+    -fx-border-radius: 50px
+}
+
+/* Butona tıklandığında (pressed) renk değişimi */
+.button:pressed {
+    -fx-background-color: #002147;  /* Daha koyu yeşil */
+    -fx-border-radius: 50px
+}

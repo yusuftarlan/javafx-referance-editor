@@ -1,0 +1,20 @@
+/* Normal Durumdaki Buton */
+.button {
+    -fx-background-color: #B71C1C;  /* Koyu kırmızı */
+    -fx-text-fill: white;           /* Yazı rengi beyaz */
+    -fx-padding: 7px 10px;          /* Butonun içindeki boşluklar */
+    -fx-font-size: 12px;            /* Yazı boyutu */
+    -fx-border-radius: 50px;       /* Yuvarlatılmış köşeler */
+}
+
+/* Butonun Üzerine Gelindiğinde (Hover) Renk Değişimi */
+.button:hover {
+    -fx-background-color: #C62828;  /* Biraz daha koyu kırmızı */
+    -fx-border-radius: 50px;        /* Yuvarlak köşeler hover durumunda korunur */
+}
+
+/* Butona Tıklandığında (Pressed) Renk Değişimi */
+.button:pressed {
+    -fx-background-color: #8E0000;  /* Daha koyu kırmızı */
+    -fx-border-radius: 50px;        /* Yuvarlak köşeler pressed durumunda korunur */
+}

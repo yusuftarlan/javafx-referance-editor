@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scenes.NewUser_control">
+   <children>
+      <AnchorPane prefHeight="139.0" prefWidth="306.0" style="-fx-background-color: #003366;" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <Label layoutX="52.0" layoutY="105.0" text="Yeni Kullanıcı Oluştur" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Label>
+            <ImageView fitHeight="95.0" fitWidth="91.0" layoutX="108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/new.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="butGoLogin" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoLogin" stylesheets="@../resources/geributon.css" text="Geri" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <GridPane alignment="CENTER" layoutX="23.0" layoutY="175.0" prefHeight="153.0" prefWidth="243.0" vgap="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.20001220703125" minWidth="10.0" prefWidth="21.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.39999160766598" minWidth="10.0" prefWidth="228.79996337890626" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="27.19998779296875" minHeight="0.0" prefHeight="27.19998779296875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.8" minHeight="10.0" prefHeight="33.60001220703125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.80000000000001" minHeight="10.0" prefHeight="30.800018310546875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="18.599966430664068" minHeight="0.0" prefHeight="7.599981689453131" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <PasswordField fx:id="girisSifre" prefHeight="18.0" prefWidth="206.0" promptText="Şifre" style="-fx-background-color: transparent; -fx-border-color: #003366; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="girisAd" alignment="TOP_LEFT" prefHeight="28.0" prefWidth="237.0" promptText="Kullanıcı Adı" style="-fx-background-color: transparent; -fx-border-color: #003366; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <HBox prefHeight="28.0" prefWidth="206.0" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="butKullaniciOlustur" mnemonicParsing="false" onAction="#kullaniciOlustur" prefHeight="32.0" prefWidth="244.0" stylesheets="@../resources/girisyapbuton.css" text="Kullanıcı Oluştur" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <ImageView fitHeight="49.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../resources/images/user2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../resources/images/padlock.png" />
+               </image>
+            </ImageView>
+
+         </children>
+      </GridPane>
+      <Label fx:id="uyarilabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="147.0" prefHeight="16.0" prefWidth="222.0" textAlignment="CENTER" textFill="#d96666" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

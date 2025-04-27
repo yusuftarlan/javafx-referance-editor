@@ -1,0 +1,26 @@
+/* Kitap Sil Butonu */
+.button {
+    -fx-background-color: #F44336; /* Kırmızı arka plan */
+    -fx-text-fill: white; /* Beyaz metin rengi */
+    -fx-border-radius: 5; /* Yuvarlatılmış kenarlar */
+    -fx-background-radius: 5; /* Yuvarlatılmış arka plan */
+    -fx-border-color: #D32F2F; /* Kenar çizgisi rengi */
+    -fx-border-width: 2px; /* Kenar çizgisi genişliği */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Hafif gölge */
+    -fx-cursor: hand; /* İmleç değişimi */
+    -fx-alignment: center; /* Metni ortala */
+}
+
+/* Kitap Sil Butonu Hover Durumu */
+.button:hover {
+    -fx-background-color: #D32F2F; /* Hover durumunda daha koyu kırmızı */
+    -fx-border-color: #C62828; /* Hover durumunda koyulaşan kenar çizgisi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 8, 0, 0, 4); /* Daha belirgin gölge */
+}
+
+/* Kitap Sil Butonu Tıklanma Durumu */
+.button:pressed {
+    -fx-background-color: #C62828; /* Tıklanınca daha koyu kırmızı */
+    -fx-border-color: #B71C1C; /* Kenar rengi değişimi */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0, 0, 1); /* Daha küçük gölge */
+}
